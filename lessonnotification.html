@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link href="resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="resources/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="resources/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/notification.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <script src="resources/jquery/jquery-3.1.1.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>     
+    <!-- <script src="resources/mustache/mustache.js"></script> -->
+    <title>레슨 - 예약 알림</title>
+    <style>
+    </style>
+</head>
+<body>    
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header text-center">
+                <a class="navbar-brand" href="reservation.html">
+                    <span class="brand1">RU Gold</span>
+                    <span class="brand2">Academy</span>
+                </a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                    <!-- /.dropdown -->
+                <li>
+                    <a href="batnotification.html"> <i id="bell" class='fa fa-bell fa-fw'> </i> <span id="numbell">()</span></a>                
+                </li>
+                <!-- <li>
+                    <a href="tutor.html"> <i class='fa fa-calendar-check-o fa-fw'> </i></a>                
+                </li> -->
+                <li>
+                    <a id="logout" title="logout"> <i class="fa fa-sign-out fa-fw"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row pageTitle">
+            <div class="col-md-2 col-xs-12 col-md-offset-5 text-center page-title">예약 알림</div>
+        </div>
+        <div class="row service text-center">
+            <a href="batnotification.html">
+                <div class="col-lg-1 col-md-1 col-xs-3 col-md-offset-5 col-xs-offset-3 atBat notactive">타석</div>
+            </a>
+            <a href="lessonnotification.html">
+                <div class="col-lg-1 col-md-1 col-xs-3 lesson active">레슨</div>
+            </a>
+        </div>
+        <div class="row">
+            <template id="notificationTemp">
+                <div class='col-md-12 col-xs-12 subinfodiv'>
+                    <div class='col-md-3 col-xs-12 pull-right'>
+                        <div class='col-md-12 text-right read' id='{{divid}}' data-kind='{{kind}}' data-id='{{id}}' ><i class='fa fa-window-close fa-2x' aria-hidden='true'></i></div>
+                        <div class='col-md-12 text-right'><time class='timeago' datetime='{{createAt}}'>{{createAt}}</time></div>
+                    </div>
+                    <div class='col-md-4 col-xs-12 pull-left'>
+                        <h4 class='text-left'>{{date}}</h4>
+                        <span class='notification'>{{message}}</span><br />
+                        <span class='client'>{{name}}</span><br />
+                        <span class='sched'>{{positionId}}타석 ({{startTime}}~{{endTime}})</span><br />
+                    </div>
+                  </div>
+            </template>
+            <div class="col-md-12 content">
+                <div class="col-md-12">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-lg-offset-3 col-md-offset-3 alert alert-danger d-none" role="alert">
+                        <h3>현재 알림이 없습니다.</h3>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 infodiv" id="infodiv">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="resources/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="js/lessonnotification.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

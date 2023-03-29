@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(180deg, #050505, #454544);
+}
+.form-signin {
+  padding: 15px;
+  color: white;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.labelid, .labelpassword{
+  margin-left: 3%;
+}
+
+input[type="text"] {
+  margin-bottom: -1px;
+  border-radius: 15px;
+  background-color: #050505;
+  height: 50px;
+}
+input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: #050505;
+  height: 50px;
+}
+.input-group-text{
+  margin-bottom: -1px;
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  background-color: none !important;
+}
+.form-control:focus {
+  color: #dea002 !important;
+  background-color: #050505 !important;
+  border-color: #FECE00 !important;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(222, 160, 2, 1) !important;
+  
+}
+.container{
+  margin-top: 7%;
+}
+.rugolf{
+  color: #FECE00 !important;
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  width: 100% !important;
+}
+.academy{
+  color: white !important;
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  width: 100% !important;
+}
+.message{
+  text-align: center !important;
+  color: white !important;
+  width: 100% !important;
+}
+#signin{
+  margin-bottom: -1px;
+  border-radius: 15px;
+  width: 100%;
+  padding: 12px;
+  font-size: 15pt;
+  color: #050505;
+  background-color: #FECE00;
+}

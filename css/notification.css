@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+}
+::-webkit-scrollbar{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #FECE00;
+  border-radius: 5px;        
+}
+::-webkit-scrollbar-corner{
+  border-radius: 5px;
+}
+body {
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(180deg, #050505, #454544);
+  /* background-color: #050505; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container{
+  width: 100%;
+  margin-top: -20px;
+}
+.pageTitle{
+  margin-top: -20px;
+}
+div{
+  border: solid 1px transparent;
+}
+.nav a, .brand1{
+  color: #FECE00 !important;
+  transition: 0.5s;
+  opacity: 1;
+}
+.brand1{
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.brand2{
+  display: block;
+  font-size: 10pt;
+  color: white;
+  letter-spacing: 5px;
+}
+/* font color yellow */
+.atBat, .lesson, tbody td, .notification,
+.nav-left a, .nav-right a{
+    color: #FECE00 !important;
+}
+
+/* font color white */
+.page-title, .lesson, .client, .sched, .infodiv, .date{
+    color: white !important;
+}
+/* padding 10px */
+.page-title{
+    padding: 10px;
+    font-size: 13pt;
+}
+.service{
+font-size: 10pt;
+padding: 10px;      
+}
+
+.active{        
+border-bottom: solid 3px #FECE00;
+}
+.notactive{
+color: white !important;
+border-bottom: solid transparent;
+}
+.atBat, .lesson{
+transition-duration: 0.5s;
+opacity: 1;
+}
+.atBat:hover, .lesson:hover{        
+border-bottom: solid 3px #FECE00;
+opacity: 1;
+}
+
+.infodiv{
+  height:70vh;
+  overflow: auto;
+}
+.subinfodiv{
+border: solid 0.8px whitesmoke;
+padding: 5px !important;
+margin: 5px 0;
+border-radius: 15px;
+}
+.nav-left, .nav-right{
+position: relative;
+margin-top: 12%;
+}
+.date{
+font-size: 15pt;
+margin-left: 11%;
+}
+.nav a, .navbar-header a{
+  color: #FECE00 !important;
+  transition: 0.5s;
+  opacity: 1;
+}
+.nav a:hover{
+  background-color: #FECE00 !important;
+  color: #050505 !important;
+  opacity: 1;
+}
+.read:hover{
+  cursor: pointer;
+  color: #FECE00;
+}
+.d-none{
+  display: none;
+}
+/* .navbar-header, .nav, .nav li{
+  border: solid 1px;
+} */
+@media (max-width:767px) {
+  .nav-left, .nav-right{
+    margin-top: 120px !important;
+    }
+  .content{
+  height: 650px;
+  }
+  .date{
+    margin-left: 0 !important;
+    }
+  .navbar-header, div .nav {
+    width: 50% !important;
+    display:inline-flex;
+    float: left;
+  }
+  .nav ul li{
+    display: inline-flex;
+    float: right !important;
+  }
+}

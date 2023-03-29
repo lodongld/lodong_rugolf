@@ -1,0 +1,53 @@
+{
+    "status": "OK",
+    "message": "나의 예약 정보",
+    "data": {
+      "타석": [
+        {
+          "id": "0a242a42-a439-4d31-9a32-c942ab178cba",
+          "date": "2022-11-16",
+          "startTime": "10:00:00",
+          "endTime": "11:00:00",
+          "createAt": "2022-10-16T11:02:35",
+          "positionId": 1
+        },
+        {
+          "id": "0a242a42-a439-4d31-9a32-c942ab178cba",
+          "date": "2022-11-16",
+          "startTime": "10:00:00",
+          "endTime": "11:00:00",
+          "createAt": "2022-10-16T11:02:35",
+          "positionId": 1
+        },
+        {
+          "id": "0a242a42-a439-4d31-9a32-c942ab178cba",
+          "date": "2022-11-16",
+          "startTime": "10:00:00",
+          "endTime": "11:00:00",
+          "createAt": "2022-10-16T11:02:35",
+          "positionId": 1
+        }
+      ],
+      "레슨": [
+        {
+          "id": "234d54d7-e1d3-4d7b-8c3f-5133fe32df66",
+          "date": "2022-11-16",
+          "startTime": "08:00:00",
+          "endTime": "08:20:00",
+          "createAt": "2022-10-16T11:02:35",
+          "instructor": {
+            "id": "ZVT4DWnwacGASzwN67fFuUzmdFjqLHqtFTxfjxZH1xESvGRNMO",
+            "name": "로동동",
+            "info": "2년차",
+            "file": {
+              "id": "Cxijn7Gx3EFlRBgHgNz9tcTSRMKuc7ELLgAdNBJCVTjtOkW32P",
+              "name": "XRuS8sUTtnUddLFe6cZKZzRxxgew3zjr1klnPCyYedLiG8j7s0",
+              "extension": "png",
+              "storage": "XRuS8sUTtnUddLFe6cZKZzRxxgew3zjr1klnPCyYedLiG8j7s0.png",
+              "createAt": 1667972988000
+            }
+          }
+        }
+      ]
+    }
+  }
